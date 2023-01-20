@@ -1,0 +1,44 @@
+
+import { StyleSheet, Text, View, SafeAreaView, Image, TouchableWithoutFeedback, TouchableOpacity ,Button,Alert, Platform, StatusBar} from 'react-native';
+import { useDimensions , useDeviceOrientation} from '@react-native-community/hooks';
+export default function App() {
+  console.log(StatusBar.currentHeight)
+  console.log(useDimensions())
+  console.log(useDeviceOrientation())
+  return (
+    <>
+    <Text style={styles.top}>
+      top
+    </Text>
+    <SafeAreaView style={styles.container}>
+      <Text numberOfLines={2} >app using native react. this is a veru long para.app using native react. this is a veru long para.app using native react. this is a veru long para.  </Text>
+      <TouchableOpacity onPress={()=>console.log("IMAGE PRESSED")} >
+      <Image 
+          source={{
+            uri: 'https://reactnative.dev/docs/assets/p_cat2.png',
+            width: 200,
+            height:200
+          }}
+        />
+        </TouchableOpacity>
+        <Button title="click here" onPress={()=>{Alert.alert("warning","have u clicked here",[{text:"yes"},{text:"no"}])}}></Button>
+    </SafeAreaView>
+    </>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: 'aqua',
+    alignItems: 'center',
+    justifyContent: 'center',
+
+  },
+  top:{
+    /*padding: Platform.OS=="android" ? 20 : 0*/
+    paddingTop:StatusBar.currentHeight,
+    marginHorizontal: '49%',
+    width: '100%'
+  }
+});
