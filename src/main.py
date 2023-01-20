@@ -63,8 +63,8 @@ except:
 
 tf.compat.v1.reset_default_graph()
 net = tflearn.input_data(shape=[None, len(training_pattern[0])])
-net = tflearn.fully_connected(net, 8)
-net = tflearn.fully_connected(net, 8)
+net = tflearn.fully_connected(net, 16)
+net = tflearn.fully_connected(net, 16)
 net = tflearn.fully_connected(net, len(training_classes[1]), activation="softmax")
 net = tflearn.regression(net)
 
