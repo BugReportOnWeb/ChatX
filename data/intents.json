@@ -1,43 +1,66 @@
-{"intents": [
-        {"tag": "greeting",
-         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day"],
-         "responses": ["Hello, thanks for visiting", "Good to see you again", "Hi there, how can I help?"],
-         "context_set": ""
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+            "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"]
         },
-        {"tag": "goodbye",
-         "patterns": ["Bye", "See you later", "Goodbye"],
-         "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+        {
+            "tag": "goodbye",
+            "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+            "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."]
         },
-        {"tag": "thanks",
-         "patterns": ["Thanks", "Thank you", "That's helpful"],
-         "responses": ["Happy to help!", "Any time!", "My pleasure"]
+        {
+            "tag": "thanks",
+            "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+            "responses": ["Happy to help!", "Any time!", "My pleasure"]
         },
-        {"tag": "hours",
-         "patterns": ["What hours are you open?", "What are your hours?", "When are you open?" ],
-         "responses": ["We're open every day 9am-9pm", "Our hours are 9am-9pm every day"]
+        {
+            "tag": "noanswer",
+            "patterns": [],
+            "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"]
         },
-        {"tag": "mopeds",
-         "patterns": ["Which mopeds do you have?", "What kinds of mopeds are there?", "What do you rent?" ],
-         "responses": ["We rent Yamaha, Piaggio and Vespa mopeds", "We have Piaggio, Vespa and Yamaha mopeds"]
+        {
+            "tag": "options",
+            "patterns": ["How you could help me?", "What help you provide?", "How you can be helpful?"],
+            "responses": ["I can guide you through Adverse management problems, order tracking, person to be contacted and Department related queries","I can provide support related to following problems technical query,management related query,order related query,tracking related query,procurement query,outsourcing problem,manufacturing delay,"]
         },
-        {"tag": "payments",
-         "patterns": ["Do you take credit cards?", "Do you accept Mastercard?", "Are you cash only?" ],
-         "responses": ["We accept VISA, Mastercard and AMEX", "We accept most major credit cards"]
+        {
+            "tag": "login_issue",
+            "patterns": ["I can't log in to my account", "I forgot my password", "I am having trouble accessing my account", "I can't access my account"],
+            "responses": ["I am sorry to hear that you are having trouble logging in. Can you please provide me with more information such as the error message you are receiving or your account details so that I can assist you further?",
+                          "If you have forgotten your password, you can reset it by visiting the account recovery page on our website. Would you like me to send you the link?",
+                          "I understand that you are having trouble accessing your account. Are you able to provide more information about the issue so I can assist you better?",
+                          "I am sorry to hear that you are having trouble accessing your account. Can you please provide me with more information so that I can assist you further?"]
         },
-        {"tag": "opentoday",
-         "patterns": ["Are you open today?", "When do you open today?", "What are your hours today?"],
-         "responses": ["We're open every day from 9am-9pm", "Our hours are 9am-9pm every day"]
+        {
+            "tag": "course_information",
+            "patterns": ["What are the prerequisites for this course?", "When is the next offering of this course?", "What is the syllabus for this course?", "How many credits is this course?"],
+            "responses": ["The prerequisites for this course vary depending on the specific offering, but generally include a background in the relevant field and completion of any necessary prerequisites. Can you provide me with the name of the course you are inquiring about so I can give you more specific information?",
+                          "The next offering of this course is currently scheduled for. However, this is subject to change. Please check the university's course schedule for the most up-to-date information.",
+                          "The syllabus for this course includes insert information about course content [insert information about course content]. Can you provide me with the name of the course you are inquiring about so I can give you more specific information?","]
         },
-        {"tag": "rental",
-         "patterns": ["Can we rent a moped?", "I'd like to rent a moped", "How does this work?" ],
-         "responses": ["Are you looking to rent today or later this week?"],
-         "context_set": "rentalday"
+        {
+            "tag": "schedule_issue",
+            "patterns": ["I am having trouble viewing my schedule", "I have a conflict in my schedule", "I need to add/drop a course"],
+            "responses": ["I am sorry to hear that you are having trouble viewing your schedule. Can you please provide me with more information so that I can assist you further?",
+                          "I understand that you have a conflict in your schedule. Have you considered reaching out to the professors of the conflicting courses to see if there is a solution?",
+                          "I understand that you need to add/drop a course. Can you please provide me with more information about which course you need to add/drop and your current schedule so that I can assist you further?"]
         },
-        {"tag": "today",
-         "patterns": ["today"],
-         "responses": ["For rentals today please call 1-800-MYMOPED", "Same-day rentals please call 1-800-MYMOPED"],
-         "context_filter": "rentalday"
+        {
+            "tag": "tuition_issue",
+            "patterns": ["I have a question about my tuition bill", "I need to set up a payment plan", "I am having trouble with financial aid"],
+            "responses": ["I am sorry to hear that you have a question about your tuition bill. Can you please provide me with more information so that I can assist you further?",
+                          "I understand that you need to set up a payment plan. Can you please provide me with more information so that I can assist you further?",
+                          "I am sorry to hear that you are having trouble with financial aid. Can you please provide me with more information so that I can assist you further?"]
+        },
+        {
+            "tag": "technical_support",
+            "patterns": ["I am having trouble with my computer", "I need help with software installation", "I am having trouble with my university email"],
+            "responses": ["I am sorry to hear that you are having trouble with your computer. Can you please provide me with more information such as the specific issue or error message you are encountering so that I can assist you further?",
+                          "I understand that you need help with software installation. Can you please provide me with more information such as the specific software you are trying to install and any error messages you are encountering so that I can assist you further?",
+                          "I am sorry to hear that you are having trouble with your university email. Can you please provide me with more information such as the specific issue or error message you are encountering so that I can assist you further?"]
         }
-   ]
+    ]
 }
 
