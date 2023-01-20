@@ -16,7 +16,7 @@ with open("../data/intents.json") as json_file:
 try:
     x
     with open("../data/prev_data.pickle", "rb") as pickle_file:
-        training_pattern, training_classes = pickle.load(pickle_file) 
+        training_pattern, training_classes, words = pickle.load(pickle_file) 
 except:
     words = []
     classes = []
@@ -59,23 +59,23 @@ except:
     training_classes = list(training[:,1])
 
     with open("../data/prev_data.pickle", "wb") as pickle_file:
-        pickle.dump((training_classes, training_pattern), pickle_file)
+        pickle.dump((training_classes, training_pattern, words), pickle_file)
 
 tf.compat.v1.reset_default_graph()
 net = tflearn.input_data(shape=[None, len(training_pattern[0])])
-net = tflearn.fully_connected(net, 16)
-net = tflearn.fully_connected(net, 16)
+net = tflearn.fully_connected(net, 8)
+net = tflearn.fully_connected(net, 8)
+net = tflearn.fully_connected(net, 8)
 net = tflearn.fully_connected(net, len(training_classes[1]), activation="softmax")
 net = tflearn.regression(net)
 
 model = tflearn.DNN(net, tensorboard_dir="tflearn_logs")
 
-try:
-    x
-    model.load("model.tflearn")
-except:
-    model.fit(training_pattern, training_classes, n_epoch=10000, batch_size=8, show_metric=True)
-    model.save("model.tflearn")
+# try:
+#     model.load("mode.tflearn")
+# except:
+model.fit(training_pattern, training_classes, n_epoch=10000, batch_size=8, show_metric=True)
+model.save("model.tflearn")
 
 def bag_of_words(user_input, words):
     bag = []
