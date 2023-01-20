@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/dev/Development/languages/python/Hackathon/ChatX/src/model.tflearn"
+all_model_checkpoint_paths: "/home/dev/Development/languages/python/Hackathon/ChatX/src/model.tflearn"
