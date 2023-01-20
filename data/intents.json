@@ -38,7 +38,7 @@
             "patterns": ["What are the prerequisites for this course?", "When is the next offering of this course?", "What is the syllabus for this course?", "How many credits is this course?"],
             "responses": ["The prerequisites for this course vary depending on the specific offering, but generally include a background in the relevant field and completion of any necessary prerequisites. Can you provide me with the name of the course you are inquiring about so I can give you more specific information?",
                           "The next offering of this course is currently scheduled for. However, this is subject to change. Please check the university's course schedule for the most up-to-date information.",
-                          "The syllabus for this course includes insert information about course content [insert information about course content]. Can you provide me with the name of the course you are inquiring about so I can give you more specific information?","]
+                          "The syllabus for this course includes insert information about course content [insert information about course content]. Can you provide me with the name of the course you are inquiring about so I can give you more specific information?"]
         },
         {
             "tag": "schedule_issue",
