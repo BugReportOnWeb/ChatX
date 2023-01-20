@@ -102,7 +102,7 @@
                 "What is the address of your school?",
                 "Can you give me directions to your campus?"
             ],
-            "responses": ["Our college is located in [city, state]. The address is [address]. We have a virtual tour on our website, which will give you an idea of the location and the campus"]
+            "responses": ["Our college is located in Rajpura, Punjab. The address is 'Chandigarh-Patiala National Highway (NH-64), Rajpura, Patiala, Punjab 140401'. We have a virtual tour on our website, which will give you an idea of the location and the campus"]
         },
         {
             "tag": "chancellor",
@@ -111,7 +111,7 @@
                 "Who is the head of the university?",
                 "Who leads the university?"
             ],
-            "responses": ["The chancellor of the university is [Name of Chancellor]. They are responsible for the overall leadership and management of the university."]
+            "responses": ["The chancellor of the university is Mr. Ashok Chitkara. They are responsible for the overall leadership and management of the university."]
         },
         {
             "tag": "hostel",
@@ -171,7 +171,7 @@
                 "Where can I find the university on social media?",
                 "Does the university have a Facebook page?"
             ],
-            "responses": ["Yes, the university has a presence on various social media platforms such as Facebook, Twitter, Instagram, and LinkedIn. You can follow us on these platforms to stay updated on university events, news, and opportunities. Our social media handle for Facebook is [University name] Facebook, for twitter is [University name] Twitter, for Instagram is [University name] Instagram, for LinkedIn is [University name] LinkedIn."]
+            "responses": ["Yes, the university has a presence on various social media platforms such as Facebook, Twitter, Instagram, and LinkedIn. You can follow us on these platforms to stay updated on university events, news, and opportunities. Our social media handle for Facebook is Chitkara University Facebook, for twitter is Chitkara University Twitter, for Instagram is Chitkara University Instagram, for LinkedIn is Chitkara University LinkedIn."]
         },
         {
             "tag": "financial_aid",
