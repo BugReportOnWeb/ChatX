@@ -2,64 +2,287 @@
     "intents": [
         {
             "tag": "greeting",
-            "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
-            "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"]
+            "patterns": [
+                "Hi there",
+                "How are you",
+                "Is anyone there?",
+                "Hey",
+                "Hello",
+                "Hey",
+                "Good day"
+            ],
+            "responses": [
+                "Hello, thanks for asking",
+                "Good to see you again",
+                "Hi there, how can I help?"
+            ]
         },
         {
             "tag": "goodbye",
-            "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
-            "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."]
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye",
+                "Nice chatting to you, bye",
+                "Till next time"
+            ],
+            "responses": [
+                "See you!",
+                "Have a nice day",
+                "Bye! Come back again soon."
+            ]
         },
         {
             "tag": "thanks",
-            "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
-            "responses": ["Happy to help!", "Any time!", "My pleasure"]
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "That's helpful",
+                "Awesome, thanks",
+                "Thanks for helping me"
+            ],
+            "responses": [
+                "Happy to help!",
+                "Any time!",
+                "My pleasure"
+            ]
         },
         {
             "tag": "noanswer",
             "patterns": [],
-            "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"]
+            "responses": [
+                "Sorry, can't understand you",
+                "Please give me more info",
+                "Not sure I understand"
+            ]
         },
         {
             "tag": "options",
-            "patterns": ["How you could help me?", "What help you provide?", "How you can be helpful?"],
-            "responses": ["I can guide you through Adverse management problems, order tracking, person to be contacted and Department related queries","I can provide support related to following problems technical query,management related query,order related query,tracking related query,procurement query,outsourcing problem,manufacturing delay,"]
+            "patterns": [
+                "How you could help me?",
+                "What help you provide?",
+                "How you can be helpful?"
+            ],
+            "responses": [
+                "I can guide you through Adverse management problems, order tracking, person to be contacted and Department related queries",
+                "I can provide support related to following problems technical query,management related query,order related query,tracking related query,procurement query,outsourcing problem,manufacturing delay,"
+            ]
+        },
+        {
+            "tag": "programs",
+            "patterns": [
+                "What programs does your college offer?",
+                "What degrees can I study at your school?",
+                "What courses are available?"
+            ],
+            "responses": ["Our college offers a wide range of programs including: Business, Computer Science, Nursing, Education, and many more.  Which program you are interested in?"]
+        },
+        {
+            "tag": "admission",
+            "patterns": [
+                "How do I apply?",
+                "What are the admission requirements?",
+                "How can I get more information on applying?"
+            ],
+            "responses": ["You can apply to our college through our online application portal. The requirements for admission vary depending on the program you are applying for.  But generally, you will need to submit transcripts and test scores.  Visit our website for more information on applying."]
+        },
+        {
+            "tag": "tuition",
+            "patterns": [
+                "How much does it cost to attend?",
+                "What are the tuition fees?",
+                "What kind of financial aid is available?"
+            ],
+            "responses": ["Tuition at our college varies depending on the program you choose and whether you are an in-state or out-of-state"]
+        },
+        {
+            "tag": "location",
+            "patterns": [
+                "Where is your college located?",
+                "What is the address of your school?",
+                "Can you give me directions to your campus?"
+            ],
+            "responses": ["Our college is located in [city, state]. The address is [address]. We have a virtual tour on our website, which will give you an idea of the location and the campus"]
+        },
+        {
+            "tag": "chancellor",
+            "patterns": [
+                "Who is the chancellor of the university?",
+                "Who is the head of the university?",
+                "Who leads the university?"
+            ],
+            "responses": ["The chancellor of the university is [Name of Chancellor]. They are responsible for the overall leadership and management of the university."]
+        },
+        {
+            "tag": "hostel",
+            "patterns": [
+                "Does the university have a hostel facility?",
+                "Is there a place to stay on campus?",
+                "Is there a hostel for students?"
+            ],
+            "responses": ["Yes, the university does have a hostel facility for students. They provide accommodation for both undergraduate and postgraduate students. You can find more information on the hostel facility and how to apply for accommodation on our university website."]
+        },
+        {
+            "tag": "sports_facility",
+            "patterns": [
+                "Does the university have sports facilities?",
+                "What kind of sports facilities are available?",
+                "Can I play sports at the university?"
+            ],
+            "responses": ["Yes, the university does have sports facilities for students. We have a variety of options such as a gym, swimming pool, basketball courts, soccer fields and many more. You can find more information on the sports facilities and how to access them on our university website."]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "Thank you for your help"
+            ],
+            "responses": ["You're welcome! Let me know if you have any other questions."]
         },
         {
             "tag": "login_issue",
-            "patterns": ["I can't log in to my account", "I forgot my password", "I am having trouble accessing my account", "I can't access my account"],
-            "responses": ["I am sorry to hear that you are having trouble logging in. Can you please provide me with more information such as the error message you are receiving or your account details so that I can assist you further?",
-                          "If you have forgotten your password, you can reset it by visiting the account recovery page on our website. Would you like me to send you the link?",
-                          "I understand that you are having trouble accessing your account. Are you able to provide more information about the issue so I can assist you better?",
-                          "I am sorry to hear that you are having trouble accessing your account. Can you please provide me with more information so that I can assist you further?"]
+            "patterns": [
+                "I can't log in to my account",
+                "I forgot my password",
+                "I am having trouble accessing my account",
+                "I can't access my account"
+            ],
+            "responses": [
+                "I am sorry to hear that you are having trouble logging in. Can you please provide me with more information such as the error message you are receiving or your account details so that I can assist you further?",
+                "If you have forgotten your password, you can reset it by visiting the account recovery page on our website. Would you like me to send you the link?",
+                "I understand that you are having trouble accessing your account. Are you able to provide more information about the issue so I can assist you better?",
+                "I am sorry to hear that you are having trouble accessing your account. Can you please provide me with more information so that I can assist you further?"
+            ]
+        },
+        {
+            "tag": "placement",
+            "patterns": [
+                "What kind of placements are available after graduation?",
+                "How does the university help with job placements?",
+                "What is the placement rate of the university?"
+            ],
+            "responses": ["The university has a dedicated placement cell that helps students with job placements after graduation. We have a strong track record of placing students in top companies in various industries. You can find more information on the placement services offered by the university and the placement rate on our university website."]
+        },
+        {
+            "tag": "social_media",
+            "patterns": [
+                "What is the university's social media handle?",
+                "Where can I find the university on social media?",
+                "Does the university have a Facebook page?"
+            ],
+            "responses": ["Yes, the university has a presence on various social media platforms such as Facebook, Twitter, Instagram, and LinkedIn. You can follow us on these platforms to stay updated on university events, news, and opportunities. Our social media handle for Facebook is [University name] Facebook, for twitter is [University name] Twitter, for Instagram is [University name] Instagram, for LinkedIn is [University name] LinkedIn."]
+        },
+        {
+            "tag": "financial_aid",
+            "patterns": [
+                "What kind of financial aid is available?",
+                "How can I apply for financial aid?",
+                "Are there any scholarships available?",
+                "What is the process for obtaining financial assistance?",
+                "What are the options for financial aid?"
+            ],
+            "responses": [
+                "There are several forms of financial aid available, including scholarships, grants, work-study programs, and loans. Our financial aid office can assist you with the application process and help you determine which forms of aid you may be eligible for.",
+                "You can apply for financial aid by completing the Free Application for Federal Student Aid (FAFSA) and submitting it to the college or university. Our financial aid office can assist you with the application process."
+            ]
+        },
+        {
+            "tag": "online_distance_learning",
+            "patterns": [
+                "Are there any online or distance learning options available?",
+                "Is there a way to take classes remotely?",
+                "Can I study from home?",
+                "Is there a online program?",
+                "Do you offer any online courses?",
+                "Can I get education from distance?"
+            ],
+            "responses": [
+                "No, there are currently no online or distance learning options available.",
+                "I'm sorry, we do not offer any online or distance learning options at this time.",
+                "Unfortunately, we do not have any remote learning options available",
+                "At this moment we don't offer any online program"
+            ]
+        },
+        {
+            "tag": "transfer_credits",
+            "patterns": [
+                "What is the process for transferring credits from other colleges?",
+                "Can I transfer my credits from another college?",
+                "What are the requirements for transferring credits?",
+                "How do I go about getting my credits transferred?",
+                "What credits will be accepted from other institutions?"
+            ],
+            "responses": [
+                "The process for transferring credits from other colleges may vary depending on the institution. Generally, you will need to submit transcripts from the previous college and have them evaluated by our registrar's office.",
+                "Not all credits may be transferred, it depends on the courses taken and their alignment with our college requirements and curriculum.",
+                "We have an articulation agreement with some institutions that allows an easy transfer of credits, please check with our registrar's office for more information."
+            ]
+        },
+        {
+            "tag": "scholarships",
+            "patterns": [
+                "Are there any scholarships available?",
+                "How can I apply for scholarships?",
+                "What are the requirements for scholarships?",
+                "What kind of scholarships does the college offer?",
+                "What is the process for obtaining scholarships?"
+            ],
+            "responses": [
+                "Yes, we offer a variety of scholarships to our students. They can be based on academic achievement, financial need, or other criteria.",
+                "You can find information on scholarships and the application process on our website or by contacting our financial aid office.",
+                "We have scholarships available for different levels of study, such as undergraduate, graduate and doctoral, also scholarships based on fields of study, such as science, technology, engineering and mathematics."
+            ]
+        },
+        {
+            "tag": "university_clubs",
+            "patterns": [
+                "What clubs are available at the university?",
+                "How do I join a club at the university?",
+                "What kind of extracurricular activities can I participate in?"
+            ],
+            "responses": [
+                "The university offers a wide variety of clubs and extracurricular activities for students to get involved in. These include clubs for academics, arts, culture, sports, and more. You can find more information on the available clubs and how to join them on our university website or by visiting the student activity center."]
         },
         {
             "tag": "course_information",
-            "patterns": ["What are the prerequisites for this course?", "When is the next offering of this course?", "What is the syllabus for this course?", "How many credits is this course?"],
-            "responses": ["The prerequisites for this course vary depending on the specific offering, but generally include a background in the relevant field and completion of any necessary prerequisites. Can you provide me with the name of the course you are inquiring about so I can give you more specific information?",
-                          "The next offering of this course is currently scheduled for. However, this is subject to change. Please check the university's course schedule for the most up-to-date information.",
-                          "The syllabus for this course includes insert information about course content [insert information about course content]. Can you provide me with the name of the course you are inquiring about so I can give you more specific information?"]
+            "patterns": [
+                "What are the prerequisites for this course?",
+                "When is the next offering of this course?",
+                "What is the syllabus for this course?",
+                "How many credits is this course?"
+            ],
+            "responses": [
+                "The prerequisites for this course vary depending on the specific offering, but generally include a background in the relevant field and completion of any necessary prerequisites. Can you provide me with the name of the course you are inquiring about so I can give you more specific information?",
+                "The next offering of this course is currently scheduled for. However, this is subject to change. Please check the university's course schedule for the most up-to-date information.",
+                "The syllabus for this course includes insert information about course content [insert information about course content]. Can you provide me with the name of the course you are inquiring about so I can give you more specific information?"
+            ]
         },
         {
             "tag": "schedule_issue",
-            "patterns": ["I am having trouble viewing my schedule", "I have a conflict in my schedule", "I need to add/drop a course"],
-            "responses": ["I am sorry to hear that you are having trouble viewing your schedule. Can you please provide me with more information so that I can assist you further?",
-                          "I understand that you have a conflict in your schedule. Have you considered reaching out to the professors of the conflicting courses to see if there is a solution?",
-                          "I understand that you need to add/drop a course. Can you please provide me with more information about which course you need to add/drop and your current schedule so that I can assist you further?"]
+            "patterns": [
+                "I am having trouble viewing my schedule",
+                "I have a conflict in my schedule",
+                "I need to add/drop a course"
+            ],
+            "responses": [
+                "I am sorry to hear that you are having trouble viewing your schedule. Can you please provide me with more information so that I can assist you further?",
+                "I understand that you have a conflict in your schedule. Have you considered reaching out to the professors of the conflicting courses to see if there is a solution?",
+                "I understand that you need to add/drop a course. Can you please provide me with more information about which course you need to add/drop and your current schedule so that I can assist you further?"
+            ]
         },
         {
             "tag": "tuition_issue",
-            "patterns": ["I have a question about my tuition bill", "I need to set up a payment plan", "I am having trouble with financial aid"],
-            "responses": ["I am sorry to hear that you have a question about your tuition bill. Can you please provide me with more information so that I can assist you further?",
-                          "I understand that you need to set up a payment plan. Can you please provide me with more information so that I can assist you further?",
-                          "I am sorry to hear that you are having trouble with financial aid. Can you please provide me with more information so that I can assist you further?"]
-        },
-        {
-            "tag": "technical_support",
-            "patterns": ["I am having trouble with my computer", "I need help with software installation", "I am having trouble with my university email"],
-            "responses": ["I am sorry to hear that you are having trouble with your computer. Can you please provide me with more information such as the specific issue or error message you are encountering so that I can assist you further?",
-                          "I understand that you need help with software installation. Can you please provide me with more information such as the specific software you are trying to install and any error messages you are encountering so that I can assist you further?",
-                          "I am sorry to hear that you are having trouble with your university email. Can you please provide me with more information such as the specific issue or error message you are encountering so that I can assist you further?"]
+            "patterns": [
+                "I have a question about my tuition bill",
+                "I need to set up a payment plan",
+                "I am having trouble with financial aid"
+            ],
+            "responses": [
+                "I am sorry to hear that you have a question about your tuition bill. Can you please provide me with more information so that I can assist you further?",
+                "I understand that you need to set up a payment plan. Can you please provide me with more information so that I can assist you further?",
+                "I am sorry to hear that you are having trouble with financial aid. Can you please provide me with more information so that I can assist you further?"
+            ]
         }
     ]
 }
