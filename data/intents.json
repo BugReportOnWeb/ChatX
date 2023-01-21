@@ -149,10 +149,10 @@
                 "I can't access my account"
             ],
             "responses": [
-                "I am sorry to hear that you are having trouble logging in. Can you please provide me with more information such as the error message you are receiving or your account details so that I can assist you further?",
-                "If you have forgotten your password, you can reset it by visiting the account recovery page on our website. Would you like me to send you the link?",
-                "I understand that you are having trouble accessing your account. Are you able to provide more information about the issue so I can assist you better?",
-                "I am sorry to hear that you are having trouble accessing your account. Can you please provide me with more information so that I can assist you further?"
+                "I am sorry to hear that you are having trouble logging in. You can try to contact us through Chalkpad.",
+                "If you have forgotten your password, you can reset it by visiting the account recovery page on our website. Or you can login through Chalkpad.",
+                "I understand that you are having trouble accessing your account. You can check for you account through Chalkpad instead.",
+                "I am sorry to hear that you are having trouble accessing your account. Try logging in through Chalkpad."
             ]
         },
         {
