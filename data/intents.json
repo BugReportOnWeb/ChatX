@@ -59,13 +59,16 @@
         {
             "tag": "options",
             "patterns": [
-                "How you could help me?",
-                "What help you provide?",
-                "How you can be helpful?"
+                "What can you do?",
+                "What services do you offer?",
+                "What are your capabilities?",
+                "What are your functions?",
+                "What can I ask you for?"
             ],
             "responses": [
-                "I can guide you through Adverse management problems, order tracking, person to be contacted and Department related queries",
-                "I can provide support related to following problems technical query,management related query,order related query,tracking related query,procurement query,outsourcing problem,manufacturing delay,"
+                "I am a university enquiry chatbot and I can provide you with information about the university, such as its history, campus locations, and academic programs. I can also assist with enrollment, registration, and financial aid. If you have any specific questions, feel free to ask!",
+                "I can help you with information about the university's programs, courses, and admission requirements. I can also provide you with information on campus facilities, events, and services. Don't hesitate to ask me any question.",
+                "As a university enquiry chatbot, I can assist you with various aspects of university life such as academics, student services, and campus resources. I can also provide information on application and enrollment process, bursaries and scholarships and even events happening on campus. Feel free to ask me anything."
             ]
         },
         {
@@ -244,20 +247,7 @@
             "responses": [
                 "The university offers a wide variety of clubs and extracurricular activities for students to get involved in. These include clubs for academics, arts, culture, sports, and more. You can find more information on the available clubs and how to join them on our university website or by visiting the student activity center."]
         },
-        {
-            "tag": "course_information",
-            "patterns": [
-                "What are the prerequisites for this course?",
-                "When is the next offering of this course?",
-                "What is the syllabus for this course?",
-                "How many credits is this course?"
-            ],
-            "responses": [
-                "The prerequisites for this course vary depending on the specific offering, but generally include a background in the relevant field and completion of any necessary prerequisites. Can you provide me with the name of the course you are inquiring about so I can give you more specific information?",
-                "The next offering of this course is currently scheduled for. However, this is subject to change. Please check the university's course schedule for the most up-to-date information.",
-                "The syllabus for this course includes insert information about course content [insert information about course content]. Can you provide me with the name of the course you are inquiring about so I can give you more specific information?"
-            ]
-        },
+        
         {
             "tag": "schedule_issue",
             "patterns": [
@@ -283,7 +273,305 @@
                 "I understand that you need to set up a payment plan. Can you please provide me with more information so that I can assist you further?",
                 "I am sorry to hear that you are having trouble with financial aid. Can you please provide me with more information so that I can assist you further?"
             ]
+        },
+        {
+            "tag": "TellMeAboutUniversity",
+            "patterns": [
+                "Tell me about the university",
+                "What can you tell me about the university?",
+                "Can you give me some information about the university?",
+                "What can I know about the university?",
+                "Can you provide me with some details about the university?"
+            ],
+            "responses": [
+                "The university is a leading institution in higher education, offering a wide range of undergraduate and graduate programs. It has a diverse student body, a beautiful campus, and a variety of extracurricular activities. The university is also known for its research and academic excellence.",
+                "The university is a well-respected institution that has been providing quality education for many years. It offers a wide range of programs and has a strong focus on research and innovation. The campus is modern, spacious and offers a variety of services and facilities for students.",
+                "The University is a premier institution for higher education and research. It's recognized for its quality of education and its distinguished faculty. The campus offers a wide range of facilities, services and activities for students. The university is renowned for its diversity and inclusivity and it's constantly working to provide a dynamic learning environment for its students."
+            ]
+        },
+        {
+            "tag": "FacultyStudentRatio",
+            "patterns": [
+                "What is the faculty to student ratio?",
+                "Can you tell me about the faculty to student ratio?",
+                "What is the ratio of faculty to students at the university?",
+                "Can you provide me with the faculty to student ratio?",
+                "What is the faculty to student ratio at the university?"
+            ],
+            "responses": [
+                "The faculty to student ratio at the university is 1:XX (specific ratio is to be added here), which means that there is a good amount of personal attention and support for students.",
+                "The university maintains a low student to faculty ratio of 1:XX (specific ratio is to be added here) which means that students have ample opportunities to interact with faculty and receive individualized attention.",
+                "The faculty to student ratio at the university is 1:XX (specific ratio is to be added here), which allows for small class sizes and personalized attention for students."
+            ]
+        },
+        {
+            "tag": "FeesIssue",
+            "patterns": [
+                "I have an issue with my fees",
+                "I am having trouble with my fee payment",
+                "I need help with my tuition fee",
+                "I have a question about my fees",
+                "I am facing issue with my fee statement"
+            ],
+            "responses": [
+                "I'm sorry to hear that you're having an issue with your fees. Please visit this link (insert link to university's fee department or technical support) for assistance with resolving any issues related to fee payments and statements.",
+                "If you're experiencing any issues with your fee payment, please visit this link (insert link to university's fee department or technical support) for assistance. They'll be able to help you with any questions or concerns you may have.",
+                "If you're having trouble with your fee statement or need help with your tuition fee, please visit this link (insert link to university's fee department or technical support) for assistance. They will be able to assist you with any issue you may have with the fees."
+            ]
+        },
+        {
+            "tag": "GradingIssue",
+            "patterns": [
+                "I have an issue with my grades",
+                "I am having trouble with my grades",
+                "I need help with my grades",
+                "I have a question about my grades",
+                "I am facing issue with my grade report"
+            ],
+            "responses": [
+                "I'm sorry to hear that you're having an issue with your grades. Please reach out to your instructor or the academic department for assistance with resolving any issues related to your grades.",
+                "If you're experiencing any issues with your grades, please reach out to your instructor or the academic department for assistance. They'll be able to help you with any questions or concerns you may have.",
+                "If you're having trouble with your grade report or need help with your grades, please contact your instructor or the academic department for assistance. They will be able to assist you with any issue you may have with the grades."
+            ]
+        },
+        {
+            "tag": "CampusTiming",
+            "patterns": [
+                "What are the campus hours?",
+                "When is the campus open?",
+                "What are the timings of the campus?",
+                "Can you tell me the opening and closing times of the campus?",
+                "What are the working hours of the campus?"
+            ],
+            "responses": [
+                "The campus is open from (insert specific times, such as 8:00am) to (insert specific times, such as 5:00pm) from Monday to Friday. On weekends, the campus is closed.",
+                "The regular hours of operation for the campus are from (insert specific times, such as 8:00am) to (insert specific times, such as 5:00pm) Monday through Friday. The campus is closed on weekends.",
+                "The campus is open from (insert specific times, such as 8:00am) to (insert specific times, such as 5:00pm) on weekdays and closed on weekends."
+            ]
+        },
+        {
+            "tag": "BusinessCourses",
+            "patterns": [
+              "What are the business courses offered?",
+              "Can you tell me about the business programs?",
+              "What degrees are available in business?",
+              "What kind of business courses does the university offer?",
+              "What can I study in business at the university?"
+            ],
+            "responses": [
+              "The university offers a wide range of business courses including (insert specific courses offered, such as finance, marketing, management, and accounting). We have undergraduate and graduate programs in business administration and management.",
+              "The university's business program offers a variety of courses such as (insert specific courses offered, such as finance, marketing, management, and accounting) at both undergraduate and graduate levels.",
+              "The university has a strong business program, offering courses in (insert specific courses offered, such as finance, marketing, management, and accounting) at both undergraduate and graduate level."
+            ]
+          },
+          {
+            "tag": "ComputerScienceCourses",
+            "patterns": [
+              "What are the computer science courses offered?",
+              "Can you tell me about the computer science programs?",
+              "What degrees are available in computer science?",
+              "What kind of computer science courses does the university offer?",
+              "What can I study in computer science at the university?"
+            
+            ],
+            "responses": [
+              "The university offers a wide range of computer science courses including (insert specific courses offered, such as software engineering, data science, artificial intelligence, and cybersecurity). We have undergraduate and graduate programs in computer science.",
+              "The university's computer science program offers a variety of courses such as (insert specific courses offered, such as software engineering, data science, artificial intelligence, and cybersecurity) at both undergraduate and graduate levels.",
+              "The university has a strong computer science program, offering courses in (insert specific courses offered, such as software engineering, data science, artificial intelligence, and cybersecurity) at both undergraduate and graduate level."
+            ]
+          },
+          {
+            "tag": "NursingCourses",
+            "patterns": [
+              "What are the nursing courses offered?",
+              "Can you tell me about the nursing programs?",
+              "What degrees are available in nursing?",
+              "What kind of nursing courses does the university offer?",
+              "What can I study in nursing at the university?"
+            ],
+            "responses": [
+              "The university offers a wide range of nursing courses including (insert specific courses offered, such as adult health, pediatrics, mental health, and community health). We have undergraduate and graduate programs in nursing.",
+              "The university's nursing program offers a variety of courses such as (insert specific courses offered, such as adult health, pediatrics, mental health, and community health) at both undergraduate and graduate levels.",
+              "The university has a strong nursing program, offering courses in (insert specific courses offered, such as adult health, pediatrics, mental health, and community health) at both undergraduate and graduate level."
+            ]
+          },
+          {  	
+            "tag":	"contact_information",							  
+            "patterns": ["What is your contact number?", 
+                "What is your email address?", 
+                "Where is your office located?"
+                ],  	  
+            "responses":["Our contact number is +1-123-456-7890. Our email address is info@university.edu and our office is located at 123 Main Street.",
+            "We are available from 9 am to 5 pm on weekdays. You can also find us on Facebook and Twitter."]  
+         },
+         {  	"tag":	"enquiry_help",							  
+                "patterns": ["Can you help me?", 
+                  "I don't understand", 
+                  "I need help"],  	  
+                "responses":["Yes, I can help you. What do you need help with?",
+                "What kind of help do you need?", 
+                "Can you tell me more about the issue?", 
+                "What seems to be the problem?", 
+                "How can I help you?"]
+        },
+        {
+            "tag": "course_recognition",
+            "patterns": [
+                "Are the courses offered by the Chitkara University recognized?",
+                "Is the Chitkara University's courses recognized?",
+                "Are the Chitkara University's courses recognized by government?",
+                "Is Chitkara University's degree valid?",
+                "Is Chitkara University's degree recognized?"
+            ],
+            "responses": [
+                "The courses offered by Chitkara University are recognized by the University Grants Commission (UGC) and other relevant government bodies."
+            ]
+        },
+        {
+            "tag": "course_requirement",
+            "patterns": [
+                "What are the minimum requirements for applying to a particular course in Chitkara University?",
+                "What are the eligibility criteria for a specific course at Chitkara University?",
+                "What qualifications do I need to apply for a course at Chitkara University?",
+                "What are the admission requirements for a certain course at Chitkara University?"
+            ],
+            "responses": [
+                "The minimum requirements for applying to a particular course in Chitkara University vary depending on the course. Please check the university's website or contact the admissions office for more information on the specific requirements for the course you are interested in. For detailed information, Please visti https://www.chitkara.edu.in/admissions/fees-structure/ ."
+            ]
+        },
+        {
+            "tag": "qualifying_exam_marks",
+            "patterns": [
+                "Are marks obtained in the qualifying exams considered for admission?",
+                "Do qualifying exam marks play a role in the admissions process?",
+                "Are the qualifying exam scores important for getting admission?",
+                "Is the score in the qualifying exam considered for admission?"
+            ],
+            "responses": [
+                "All admissions are strictly on merit. Admissions to some courses are based on merit in the all-India entrance test, and in some programs on the basis of merit in the qualifying examination."
+            ]
+        },
+        {
+            "tag": "apply_before_result",
+            "patterns": [
+                "Can I apply for admission to a program in Chitkara University before the declaration of result of the qualifying exam?",
+                "Can I submit an application before I receive my qualifying exam results?",
+                "Is it possible to apply for a course before the results of my qualifying exam are out?",
+                "Can I apply to a program in Chitkara University before I know my qualifying exam results?"
+            ],
+            "responses": [
+                "Yes, you can apply before the declaration of result of the qualifying exam for programs where admissions are done on the basis of marks. For all other courses, the proof of having passed the qualifying examination with requisite marks is to be submitted at the time of counselling/ admission."
+            ]
+        },
+        {
+            "tag": "course_expenditure",
+            "patterns": ["What is the total approximate expenditure for a selected course?", "How much does the course cost?", "What are the fees for the course?"],
+            "responses": ["The total approximate expenditure for the selected course is $X. This includes tuition, books, and other fees."],
+            "context_set": ""
+        },
+        {
+            "tag": "admission_test_only",
+            "patterns": ["Can I receive admission on the basis of entrance test alone?", "Do I need to submit any other documents besides the entrance test scores?", "Is the entrance test the only criteria for admission?"],
+            "responses": ["Depending on the admission criteria, the admissions will be based on merit in the entrance test or marks in the qualifying examination. However, all candidates must fulfill the minimum eligibility requirements."],
+            "context_set": ""
+        },
+        {
+            "tag": "application_form_by_post",
+            "patterns": ["Can I receive the application form by post?", "Is it possible to get the application form in the mail?", "Can I get the application form sent to my mailing address?"],
+            "responses": ["Yes, it is possible to receive the application form by post. You can request the form by contacting the university's admission office and providing them with your mailing address."],
+            "context_set": ""
+        },
+        {
+            "tag": "campus_visit_for_application_form",
+            "patterns": ["Do I need to come down to Chitkara University campus/admission office to receive/submit the application form?", "Can I submit the application form online or by post?", "Is it mandatory to visit the university campus for the application process?"],
+            "responses": ["No, the application form can be received by post and can be sent through post or courier."],
+            "context_set": ""
+        },
+        {
+            "tag": "prospectus_and_application_forms",
+            "patterns": ["Where can I get the prospectus and application forms?", "Where can I find the forms to apply for the university?", "How can I get the prospectus for the university?"],
+            "responses": ["Prospectus and application forms for Chitkara University can be obtained from the university's admission office or website. You can also request for them to be mailed to you by contacting the admission office."],
+            "context_set": ""
+        },
+        {
+            "tag": "multiple_courses_application_forms",
+            "patterns": ["If I have to apply for more than one course/program, should I get that many application forms?", "Can I use the same application form for multiple courses?", "Do I need to fill separate application forms for each course I want to apply for?"],
+            "responses": ["It depends on the university's admission process. Some universities may require separate application forms for each course, while others may allow you to use the same form to apply for multiple courses. Please check with Chitkara University's admission office for their specific requirements."],
+            "context_set": ""
+        },
+        {
+            "tag": "nominee_for_counseling",
+            "patterns": ["Can I depute someone as a nominee for counselling if I am not able to travel/ come down?", "Is it possible to send a representative for counselling if I cannot attend?", "Can I authorize someone else to attend counseling on my behalf?"],
+            "responses": ["It depends on the university's admission process. Some universities may allow you to send a representative for counseling, while others may require you to attend in person. Please check with Chitkara University's admission office for their specific requirements regarding nominee attendance at counseling."],
+            "context_set": ""
+        },
+        {
+            "tag": "payment_at_counseling",
+            "patterns": ["Do I need to pay the admission/tuition fee at the time of counselling/admission?", "When is the fee payment deadline?", "Is the fee payment done during the counselling session?"],
+            "responses": ["It depends on the university's admission process. Some universities may require you to pay the fee at the time of counseling or admission, while others may have a later deadline for fee payment. Please check with Chitkara University's admission office for their specific requirements and deadline for fee payment."],
+            "context_set": ""
+        },
+        {
+            "tag": "installment_payment",
+            "patterns": ["Is there any facility for payment of fees in installments?", "Can I pay my fees in parts?", "Is there an option for installment plan for fee payment?"],
+            "responses": ["No, the entire first semester fee is to be paid on the day of counselling/admission and there is no provision for payment of fee in installments/parts."],
+            "context_set": ""
+        },
+        {
+            "tag": "capitation_fee",
+            "patterns": ["Is there a capitation fee?", "Is there any additional fee apart from the ones mentioned in the prospectus?", "Are there any hidden fees that I should be aware of?"],
+            "responses": ["No, the candidates need to pay only the fees mentioned in the prospectus. There is no capitation fee."],
+            "context_set": ""
+        },
+        {
+            "tag": "admission_agents",
+            "patterns": ["Is there any agent who can help me in getting admission to Chitkara University?", "Can I use the services of an agent to apply to the university?", "Are there any middlemen involved in the admission process at Chitkara University?"],
+            "responses": ["No, we don’t have any agents or middlemen for admissions at Chitkara University. All applications and admissions are handled directly by the university's admission office."],
+            "context_set": ""
+        },
+        {
+            "tag": "management_quota",
+            "patterns": ["Is there any management/reservation/donation quota?", "Are there any seats reserved for management or donations?", "Are admissions awarded based on merit only or are there any reserved seats?"],
+            "responses": ["No, all admissions are awarded strictly on merit and we don’t have any management quota, reserved/donation seats or payment seats of any kind at Chitkara University."],
+            "context_set": ""
+        },
+        {
+            "tag": "DD_details",
+            "patterns": ["In whose favour should the application/entrance-test demand draft (DD) be made? Where should it be drawn and in which bank should it be made?", "What are the details for making DD for application/entrance-test?", "Who do I make the DD payable to and where should it be drawn?"],
+            "responses": ["The demand draft (DD) should be made in favour of Chitkara University, payable at Chandigarh. The DD can be made from any bank."],
+            "context_set": ""
+        },
+        {
+            "tag": "return_original_documents",
+            "patterns": ["Can I take back the original documents?", "Will I get my original documents back after the counselling/admission process?", "Are original documents returned after verification?"],
+            "responses": ["All the original documents are returned after verification."],
+            "context_set": ""
+        },
+        {
+            "tag": "PhD_programs",
+            "patterns": ["Does Chitkara University offer Ph.D. programs?", "Is there any research program offered by Chitkara University?", "Can I pursue my Ph.D. at Chitkara University?"],
+            "responses": ["Yes, Chitkara University offers Ph.D. programs. For more information, please visit the university's website or contact the university's research office."],
+            "context_set": ""
+        },
+        {
+            "tag": "dress_code",
+            "patterns": ["Is there any dress code?", "What is the dress code for Chitkara University?", "Are there any specific clothes required for the students of Chitkara University?"],
+            "responses": ["In order to lend brand-exclusivity to each of our students, a dress code will be applied for the students of Chitkara University. All students are strictly advised to follow the dress code inside the campus."],
+            "context_set": ""
+        },
+        {
+            "tag": "hostel_charges",
+            "patterns": ["Are hostel charges included in the tuition fee?", "Is the hostel fee separate from the tuition fee?", "Is there any additional fee for the hostel accommodation?"],
+            "responses": ["No. The hostel fee is mentioned separately."],
+            "context_set": ""
+        },
+        {
+            "tag": "who_am_i",
+            "patterns": ["Who are you?", "What is your name?", "What is your function?"],
+            "responses": ["I am a Chatbot trained to assist with information and enquiries about Chitkara University. How can I help you today?"],
+            "context_set": ""
         }
+            
     ]
 }
 
