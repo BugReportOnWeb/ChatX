@@ -32,7 +32,7 @@ except:
             if intent["tag"] not in classes:
                 classes.append(intent["tag"])
 
-    words = [lemmatizer.lemmatize(ele.lower(), pos='v') for ele in words if ele not in ignored_character]
+    words = [lemmatizer.lemmatize(ele.lower(), pos='n') for ele in words if ele not in ignored_character]
     words = sorted(list(set(words)))
     classes = sorted(list(set(classes)))
 
