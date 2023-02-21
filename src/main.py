@@ -32,7 +32,7 @@ except:
             if intent["tag"] not in classes:
                 classes.append(intent["tag"])
 
-    words = [lemmatizer.lemmatize(ele.lower(), pos='n') for ele in words if ele not in ignored_character]
+    words = [lemmatizer.lemmatize(ele.lower(), pos='n') for ele in words if ele not in ignored_character and len(ele) > 1]
     words = sorted(list(set(words)))
     classes = sorted(list(set(classes)))
 
@@ -65,7 +65,6 @@ tf.compat.v1.reset_default_graph()
 net = tflearn.input_data(shape=[None, len(training_pattern[0])])
 net = tflearn.fully_connected(net, 8)
 net = tflearn.fully_connected(net, 8)
-net = tflearn.fully_connected(net, 8)
 net = tflearn.fully_connected(net, len(training_classes[1]), activation="softmax")
 net = tflearn.regression(net)
 
@@ -74,7 +73,7 @@ model = tflearn.DNN(net, tensorboard_dir="tflearn_logs")
 # try:
 #     model.load("mode.tflearn")
 # except:
-model.fit(training_pattern, training_classes, n_epoch=10000, batch_size=8, show_metric=True)
+model.fit(training_pattern, training_classes, n_epoch=1000, batch_size=8, show_metric=True)
 model.save("model.tflearn")
 
 def bag_of_words(user_input, words):
